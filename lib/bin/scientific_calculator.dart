@@ -117,7 +117,6 @@ void main() {
   }
 }
 
-
 // class for declearing the  the calculator Function 
 
 class ScientificCalculator {
@@ -133,7 +132,6 @@ class ScientificCalculator {
   void entNum_2() {
     num2 = double.parse(stdin.readLineSync()!);
   }
-
 
    //  Main Manu for Scientific Calculator...
 
@@ -160,7 +158,6 @@ class ScientificCalculator {
   }  
 
   // For Simple Calculator  .
-
 
   // Sum Function
   double sum() {
