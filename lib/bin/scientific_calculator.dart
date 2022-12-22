@@ -7,11 +7,11 @@ void main() {
 
   // Creating object of the class.
   // Now we can access all the function of the parents class.
-  var cal = ScientificCalculator();
+  var obj = Scientific_Function();
 
   // A variable for passing in switch case.
   int choice = 0;
-  cal.menu();
+  obj.menu();
 
   print("_____________________");
   print("Select:...");
@@ -22,104 +22,104 @@ void main() {
     // For sum operation.
     case 1:
       print("Enter Number 1: ");
-      cal.entNum_1();
+      obj.entNum_1();
       print("Enter Number 2: ");
-      cal.entNum_2();
-      print(cal.sum());
+      obj.entNum_2();
+      print(obj.sum());
       break;
     // For minus operation.
     case 2:
       print("Enter Number 1: ");
-      cal.entNum_1();
+      obj.entNum_1();
       print("Enter Number 2: ");
-      cal.entNum_2();
-      print(cal.subtract());
+      obj.entNum_2();
+      print(obj.subtract());
       break;
     // For multiply operation.
     case 3:
       print("Enter Number 1: ");
-      cal.entNum_1();
+      obj.entNum_1();
       print("Enter Number 2: ");
-      cal.entNum_2();
-      print(cal.product());
+      obj.entNum_2();
+      print(obj.product());
       break;
     // For division operation.
     case 4:
       print("Enter Number 1: ");
-      cal.entNum_1();
+      obj.entNum_1();
       print("Enter Number 2: ");
-      cal.entNum_2();
-      print(cal.division());
+      obj.entNum_2();
+      print(obj.division());
       break;
 
     // For sin operation.
     case 5:
-      cal.setAngle();
-      cal.getSin();
+      obj.setAngle();
+      obj.getSin();
       break;
     // For cos operation.
     case 6:
-      cal.setAngle();
-      cal.getCos();
+      obj.setAngle();
+      obj.getCos();
       break;
     // For tan operation.
     case 7:
-      cal.setAngle();
-      cal.getTan();
+      obj.setAngle();
+      obj.getTan();
       break;
     // For asin operation.
     case 8:
-      cal.setAngle();
-      cal.getAsin();
+      obj.setAngle();
+      obj.getAsin();
       break;
     // For acos operation.
     case 9:
-      cal.setAngle();
-      cal.getAcos();
+      obj.setAngle();
+      obj.getAcos();
       break;
     // For atan operation.
     case 10:
-      cal.setAngle();
-      cal.getAtan();
+      obj.setAngle();
+      obj.getAtan();
       break;
     // For power operation.
     case 11:
       print("Enter Base: ");
-      cal.entNum_1();
+      obj.entNum_1();
       print("Enter Power: ");
-      cal.entNum_2();
-      cal.getPower();
+      obj.entNum_2();
+      obj.getPower();
       break;
     // For Average operation.
     case 12:
       print("AVERAGE");
       print("Enter Value 1: ");
-      cal.entNum_1();
+      obj.entNum_1();
       print("Enter Value 2: ");
-      cal.entNum_2();
-      print(cal.getAverage());
+      obj.entNum_2();
+      print(obj.getAverage());
       break;
     // For SqaureRoot operation.
     case 13:
       print("SquarRoot");
       print("Enter Value : ");
-      cal.entNum_1();
-      cal.squarRoot();
+      obj.entNum_1();
+      obj.squarRoot();
       break;
     // For percentage operation.
     case 14:
       print("PERCENTAGE");
       print("Enter Obtained Marks: ");
-      cal.entNum_1();
+      obj.entNum_1();
       print("Enter Total Marks: ");
-      cal.entNum_2();
-      print(cal.getPercentage());
+      obj.entNum_2();
+      print(obj.getPercentage());
   }
 }
 
 // class for declearing the  the calculator Function 
 
-class ScientificCalculator {
+class Scientific_Function {
   late double num1;   // variable for storing value in run time 
   late double num2;
 
